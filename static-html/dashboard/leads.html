@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leads · Keystone</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400&family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="/assets/css/theme.css">
+</head>
+<body data-page="leads">
+<div class="app-shell">
+  <div data-include="sidebar"></div>
+  <div class="app-main">
+    <div data-include="topbar"></div>
+    <main class="flex-1 p-6 lg:p-8 max-w-[1600px] w-full mx-auto">
+
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <h1 class="font-display text-2xl">Leads</h1>
+          <p class="text-sm mt-1" style="color:var(--muted-foreground)">312 total · 47 captured today</p>
+        </div>
+        <button class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          Add Lead
+        </button>
+      </div>
+
+      <!-- Pipeline stat strip -->
+      <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-6">
+        <div class="surface-card p-4 text-center">
+          <p class="font-display text-2xl">128</p>
+          <p class="text-xs mt-1" style="color:var(--muted-foreground)">New</p>
+        </div>
+        <div class="surface-card p-4 text-center">
+          <p class="font-display text-2xl">86</p>
+          <p class="text-xs mt-1" style="color:var(--muted-foreground)">Qualified</p>
+        </div>
+        <div class="surface-card p-4 text-center">
+          <p class="font-display text-2xl">52</p>
+          <p class="text-xs mt-1" style="color:var(--muted-foreground)">Viewing booked</p>
+        </div>
+        <div class="surface-card p-4 text-center">
+          <p class="font-display text-2xl">31</p>
+          <p class="text-xs mt-1" style="color:var(--muted-foreground)">Negotiating</p>
+        </div>
+        <div class="surface-card p-4 text-center">
+          <p class="font-display text-2xl" style="color:var(--success)">15</p>
+          <p class="text-xs mt-1" style="color:var(--muted-foreground)">Converted</p>
+        </div>
+      </div>
+
+      <div class="surface-card">
+        <div class="flex flex-wrap items-center gap-3 p-4" style="border-bottom:1px solid var(--border)">
+          <input type="search" placeholder="Search by name, email, phone..." class="field-input max-w-xs">
+          <select class="field-select w-auto">
+            <option>All sources</option>
+            <option>Website Chat</option>
+            <option>Voice Agent</option>
+            <option>Viber</option>
+            <option>Manual</option>
+          </select>
+          <select class="field-select w-auto">
+            <option>All statuses</option>
+            <option>New</option>
+            <option>Qualified</option>
+            <option>Converted</option>
+          </select>
+          <button class="btn btn-ghost ml-auto text-sm">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+            Filters
+          </button>
+        </div>
+
+        <div class="overflow-x-auto">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th><input type="checkbox"></th>
+              <th>Lead</th>
+              <th>Source</th>
+              <th>Interest</th>
+              <th>Score</th>
+              <th>Status</th>
+              <th>Last contact</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>
+                <div class="flex items-center gap-3">
+                  <img src="https://i.pravatar.cc/64?img=5" class="w-9 h-9 rounded-full object-cover">
+                  <div>
+                    <p class="font-medium">Elena Dimitrova</p>
+                    <p class="text-xs" style="color:var(--muted-foreground)">elena.d@gmail.com</p>
+                  </div>
+                </div>
+              </td>
+              <td><span class="badge badge-ai">Chatbot</span></td>
+              <td class="text-sm">2BR · Vake · $180k</td>
+              <td><span class="font-medium" style="color:var(--success)">92</span></td>
+              <td><span class="badge badge-new">New</span></td>
+              <td class="text-sm" style="color:var(--muted-foreground)">2 min ago</td>
+              <td><button class="btn-ghost btn p-1.5">⋯</button></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>
+                <div class="flex items-center gap-3">
+                  <img src="https://i.pravatar.cc/64?img=12" class="w-9 h-9 rounded-full object-cover">
+                  <div>
+                    <p class="font-medium">Giorgi Beridze</p>
+                    <p class="text-xs" style="color:var(--muted-foreground)">+995 555 11 22 33</p>
+                  </div>
+                </div>
+              </td>
+              <td><span class="badge badge-muted">Voice Agent</span></td>
+              <td class="text-sm">3BR House · Mtatsminda</td>
+              <td><span class="font-medium" style="color:var(--success)">88</span></td>
+              <td><span class="badge badge-converted">Viewing booked</span></td>
+              <td class="text-sm" style="color:var(--muted-foreground)">14 min ago</td>
+              <td><button class="btn-ghost btn p-1.5">⋯</button></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>
+                <div class="flex items-center gap-3">
+                  <img src="https://i.pravatar.cc/64?img=32" class="w-9 h-9 rounded-full object-cover">
+                  <div>
+                    <p class="font-medium">Nino Kapanadze</p>
+                    <p class="text-xs" style="color:var(--muted-foreground)">nino.k@outlook.com</p>
+                  </div>
+                </div>
+              </td>
+              <td><span class="badge badge-gold">Viber</span></td>
+              <td class="text-sm">Studio · Saburtalo</td>
+              <td><span class="font-medium" style="color:var(--warning)">64</span></td>
+              <td><span class="badge badge-human">Needs human</span></td>
+              <td class="text-sm" style="color:var(--muted-foreground)">26 min ago</td>
+              <td><button class="btn-ghost btn p-1.5">⋯</button></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>
+                <div class="flex items-center gap-3">
+                  <img src="https://i.pravatar.cc/64?img=23" class="w-9 h-9 rounded-full object-cover">
+                  <div>
+                    <p class="font-medium">David Chikovani</p>
+                    <p class="text-xs" style="color:var(--muted-foreground)">d.chikovani@proton.me</p>
+                  </div>
+                </div>
+              </td>
+              <td><span class="badge badge-ai">Chatbot</span></td>
+              <td class="text-sm">4BR Penthouse · Vake</td>
+              <td><span class="font-medium" style="color:var(--success)">95</span></td>
+              <td><span class="badge badge-converted">Converted</span></td>
+              <td class="text-sm" style="color:var(--muted-foreground)">Yesterday</td>
+              <td><button class="btn-ghost btn p-1.5">⋯</button></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>
+                <div class="flex items-center gap-3">
+                  <img src="https://i.pravatar.cc/64?img=44" class="w-9 h-9 rounded-full object-cover">
+                  <div>
+                    <p class="font-medium">Mariam Lortkipanidze</p>
+                    <p class="text-xs" style="color:var(--muted-foreground)">+995 599 44 55 66</p>
+                  </div>
+                </div>
+              </td>
+              <td><span class="badge badge-muted">Manual</span></td>
+              <td class="text-sm">2BR · Old Tbilisi</td>
+              <td><span class="font-medium" style="color:var(--muted-foreground)">41</span></td>
+              <td><span class="badge badge-missed">Missed</span></td>
+              <td class="text-sm" style="color:var(--muted-foreground)">2 days ago</td>
+              <td><button class="btn-ghost btn p-1.5">⋯</button></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+
+        <div class="flex items-center justify-between p-4 text-sm" style="border-top:1px solid var(--border); color:var(--muted-foreground)">
+          <p>Showing 1–5 of 312 leads</p>
+          <div class="flex items-center gap-2">
+            <button class="btn-secondary btn text-sm px-3 py-1.5">Previous</button>
+            <button class="btn-secondary btn text-sm px-3 py-1.5">Next</button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+<script src="/assets/js/dashboard.js"></script>
+</body>
+</html>

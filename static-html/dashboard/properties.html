@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Properties · Keystone</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400&family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="/assets/css/theme.css">
+</head>
+<body data-page="properties">
+<div class="app-shell">
+  <div data-include="sidebar"></div>
+  <div class="app-main">
+    <div data-include="topbar"></div>
+    <main class="flex-1 p-6 lg:p-8 max-w-[1600px] w-full mx-auto">
+
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <h1 class="font-display text-2xl">Properties</h1>
+          <p class="text-sm mt-1" style="color:var(--muted-foreground)">86 active listings · AI matching enabled</p>
+        </div>
+        <button class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          Add Property
+        </button>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-3 mb-6">
+        <input type="search" placeholder="Search properties..." class="field-input max-w-xs">
+        <select class="field-select w-auto"><option>All types</option><option>Apartment</option><option>House</option><option>Studio</option></select>
+        <select class="field-select w-auto"><option>All districts</option><option>Vake</option><option>Saburtalo</option><option>Old Tbilisi</option></select>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="surface-card overflow-hidden">
+          <div class="relative h-44">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop" class="w-full h-full object-cover">
+            <span class="badge badge-gold absolute top-3 left-3">96% match</span>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between">
+              <p class="font-display text-lg">$178,000</p>
+              <span class="badge badge-muted">Active</span>
+            </div>
+            <p class="text-sm mt-0.5">2BR Apartment · Vake Residence</p>
+            <p class="text-xs mt-1" style="color:var(--muted-foreground)">85 m² · Floor 6/12 · 3 active leads matched</p>
+          </div>
+        </div>
+
+        <div class="surface-card overflow-hidden">
+          <div class="relative h-44">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&h=400&fit=crop" class="w-full h-full object-cover">
+            <span class="badge badge-gold absolute top-3 left-3">91% match</span>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between">
+              <p class="font-display text-lg">$245,000</p>
+              <span class="badge badge-muted">Active</span>
+            </div>
+            <p class="text-sm mt-0.5">3BR House · Mtatsminda</p>
+            <p class="text-xs mt-1" style="color:var(--muted-foreground)">140 m² · 2 floors · 1 viewing booked</p>
+          </div>
+        </div>
+
+        <div class="surface-card overflow-hidden">
+          <div class="relative h-44">
+            <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&h=400&fit=crop" class="w-full h-full object-cover">
+            <span class="badge badge-muted absolute top-3 left-3">Pending</span>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between">
+              <p class="font-display text-lg">$98,000</p>
+              <span class="badge badge-muted">Active</span>
+            </div>
+            <p class="text-sm mt-0.5">Studio · Saburtalo</p>
+            <p class="text-xs mt-1" style="color:var(--muted-foreground)">42 m² · Floor 3/9 · 5 inquiries this week</p>
+          </div>
+        </div>
+
+        <div class="surface-card overflow-hidden">
+          <div class="relative h-44">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" class="w-full h-full object-cover">
+            <span class="badge badge-gold absolute top-3 left-3">99% match</span>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between">
+              <p class="font-display text-lg">$620,000</p>
+              <span class="badge badge-muted">Active</span>
+            </div>
+            <p class="text-sm mt-0.5">4BR Penthouse · Vake</p>
+            <p class="text-xs mt-1" style="color:var(--muted-foreground)">210 m² · Rooftop terrace · Converted this week</p>
+          </div>
+        </div>
+
+        <div class="surface-card overflow-hidden">
+          <div class="relative h-44">
+            <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=600&h=400&fit=crop" class="w-full h-full object-cover">
+            <span class="badge badge-muted absolute top-3 left-3">63% match</span>
+          </div>
+          <div class="p-4">
+            <div class="flex items-center justify-between">
+              <p class="font-display text-lg">$156,000</p>
+              <span class="badge badge-muted">Active</span>
+            </div>
+            <p class="text-sm mt-0.5">2BR Apartment · Old Tbilisi</p>
+            <p class="text-xs mt-1" style="color:var(--muted-foreground)">78 m² · Renovated · Historic building</p>
+          </div>
+        </div>
+
+        <div class="surface-card overflow-hidden flex items-center justify-center text-center p-8" style="border-style:dashed">
+          <div>
+            <p class="font-display text-lg mb-1">Import your listings</p>
+            <p class="text-sm mb-3" style="color:var(--muted-foreground)">Connect your CRM or upload a CSV to sync properties automatically</p>
+            <button class="btn btn-secondary text-sm">Import now</button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+<script src="/assets/js/dashboard.js"></script>
+</body>
+</html>

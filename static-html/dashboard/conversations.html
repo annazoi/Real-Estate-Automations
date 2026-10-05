@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conversations · Keystone</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400&family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="/assets/css/theme.css">
+</head>
+<body data-page="conversations">
+<div class="app-shell">
+  <div data-include="sidebar"></div>
+  <div class="app-main">
+    <div data-include="topbar"></div>
+    <main class="flex-1 p-6 lg:p-8 max-w-[1600px] w-full mx-auto">
+
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <h1 class="font-display text-2xl">Conversations</h1>
+          <p class="text-sm mt-1" style="color:var(--muted-foreground)">Unified inbox across chatbot and Viber</p>
+        </div>
+      </div>
+
+      <div class="surface-card overflow-hidden" style="height:68vh">
+        <div class="grid grid-cols-1 md:grid-cols-[320px_1fr] h-full">
+
+          <!-- Thread list -->
+          <div class="border-r h-full flex flex-col" style="border-color:var(--border)">
+            <div class="p-3" style="border-bottom:1px solid var(--border)">
+              <input type="search" placeholder="Search conversations..." class="field-input" style="background-color:var(--muted); border-color:transparent">
+            </div>
+            <div class="flex-1 overflow-y-auto scrollbar-thin">
+              <button class="w-full flex items-start gap-3 p-3.5 text-left" style="background-color:var(--muted)">
+                <img src="https://i.pravatar.cc/64?img=5" class="w-10 h-10 rounded-full object-cover">
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center justify-between">
+                    <p class="font-medium text-sm truncate">Elena Dimitrova</p>
+                    <span class="text-xs" style="color:var(--muted-foreground)">2m</span>
+                  </div>
+                  <p class="text-xs truncate mt-0.5" style="color:var(--muted-foreground)">Yes, I'd like to see it this weekend</p>
+                </div>
+                <span class="w-2 h-2 rounded-full shrink-0 mt-1.5" style="background-color:var(--ai)"></span>
+              </button>
+              <button class="w-full flex items-start gap-3 p-3.5 text-left hover:bg-[var(--muted)]">
+                <img src="https://i.pravatar.cc/64?img=32" class="w-10 h-10 rounded-full object-cover">
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center justify-between">
+                    <p class="font-medium text-sm truncate">Nino Kapanadze</p>
+                    <span class="text-xs" style="color:var(--muted-foreground)">26m</span>
+                  </div>
+                  <p class="text-xs truncate mt-0.5" style="color:var(--muted-foreground)">Can you tell me about parking?</p>
+                </div>
+                <span class="badge badge-human text-[10px] px-1.5 shrink-0">Human</span>
+              </button>
+              <button class="w-full flex items-start gap-3 p-3.5 text-left hover:bg-[var(--muted)]">
+                <img src="https://i.pravatar.cc/64?img=12" class="w-10 h-10 rounded-full object-cover">
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center justify-between">
+                    <p class="font-medium text-sm truncate">Giorgi Beridze</p>
+                    <span class="text-xs" style="color:var(--muted-foreground)">1h</span>
+                  </div>
+                  <p class="text-xs truncate mt-0.5" style="color:var(--muted-foreground)">Perfect, see you Saturday at 2pm</p>
+                </div>
+              </button>
+              <button class="w-full flex items-start gap-3 p-3.5 text-left hover:bg-[var(--muted)]">
+                <img src="https://i.pravatar.cc/64?img=23" class="w-10 h-10 rounded-full object-cover">
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center justify-between">
+                    <p class="font-medium text-sm truncate">David Chikovani</p>
+                    <span class="text-xs" style="color:var(--muted-foreground)">1d</span>
+                  </div>
+                  <p class="text-xs truncate mt-0.5" style="color:var(--muted-foreground)">Deal closed — thank you!</p>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Active thread -->
+          <div class="flex flex-col h-full">
+            <div class="flex items-center justify-between p-4" style="border-bottom:1px solid var(--border)">
+              <div class="flex items-center gap-3">
+                <img src="https://i.pravatar.cc/64?img=5" class="w-9 h-9 rounded-full object-cover">
+                <div>
+                  <p class="font-medium text-sm">Elena Dimitrova</p>
+                  <p class="text-xs flex items-center gap-1" style="color:var(--muted-foreground)">
+                    <span class="w-1.5 h-1.5 rounded-full" style="background-color:var(--ai)"></span>
+                    Website Chatbot · active
+                  </p>
+                </div>
+              </div>
+              <button class="btn btn-secondary text-sm">Take over</button>
+            </div>
+
+            <div class="flex-1 overflow-y-auto scrollbar-thin p-5 space-y-3" style="background-color:var(--muted)">
+              <div class="flex justify-start">
+                <div class="surface-card px-3.5 py-2.5 max-w-[75%] text-sm">Hi! I'm looking for a 2-bedroom in Vake, budget around $180k. Do you have anything?</div>
+              </div>
+              <div class="flex justify-end">
+                <div class="px-3.5 py-2.5 max-w-[75%] text-sm rounded-2xl" style="background-color:var(--primary); color:var(--primary-foreground)">I found 3 matching listings in Vake within your budget. Would you like me to send details, or book a viewing directly?</div>
+              </div>
+              <div class="flex justify-start">
+                <div class="surface-card px-3.5 py-2.5 max-w-[75%] text-sm">Send details please, and I'd like to see the best one this weekend</div>
+              </div>
+              <div class="flex justify-end">
+                <div class="px-3.5 py-2.5 max-w-[75%] text-sm rounded-2xl" style="background-color:var(--primary); color:var(--primary-foreground)">Great choice — Vake Residence, 2BR/85m², $178,000. I've booked a viewing for Saturday at 11:00 AM with agent Tamar. Confirmation sent to your email.</div>
+              </div>
+              <div class="flex justify-start">
+                <div class="surface-card px-3.5 py-2.5 max-w-[75%] text-sm">Yes, I'd like to see it this weekend</div>
+              </div>
+            </div>
+
+            <div class="p-3 flex items-center gap-2" style="border-top:1px solid var(--border)">
+              <input type="text" placeholder="Type a message..." class="field-input">
+              <button class="btn btn-primary">Send</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+<script src="/assets/js/dashboard.js"></script>
+</body>
+</html>

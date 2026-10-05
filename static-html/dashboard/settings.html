@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Settings · Keystone</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400&family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="/assets/css/theme.css">
+</head>
+<body data-page="settings">
+<div class="app-shell">
+  <div data-include="sidebar"></div>
+  <div class="app-main">
+    <div data-include="topbar"></div>
+    <main class="flex-1 p-6 lg:p-8 max-w-[1600px] w-full mx-auto">
+
+      <div class="mb-6">
+        <h1 class="font-display text-2xl">Settings</h1>
+        <p class="text-sm mt-1" style="color:var(--muted-foreground)">Manage your account, team, and security preferences</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-6">
+        <nav class="flex lg:flex-col gap-1 overflow-x-auto">
+          <button class="text-left px-3.5 py-2.5 rounded-lg text-sm font-medium" style="background-color:var(--secondary)">Profile</button>
+          <button class="text-left px-3.5 py-2.5 rounded-lg text-sm" style="color:var(--muted-foreground)">Team members</button>
+          <button class="text-left px-3.5 py-2.5 rounded-lg text-sm" style="color:var(--muted-foreground)">Notifications</button>
+          <button class="text-left px-3.5 py-2.5 rounded-lg text-sm" style="color:var(--muted-foreground)">API keys</button>
+          <button class="text-left px-3.5 py-2.5 rounded-lg text-sm" style="color:var(--muted-foreground)">Security</button>
+        </nav>
+
+        <div class="space-y-6">
+          <div class="surface-card p-6">
+            <p class="font-display text-lg mb-4">Profile</p>
+            <div class="flex items-center gap-4 mb-5">
+              <img src="https://i.pravatar.cc/80?img=47" class="w-16 h-16 rounded-full object-cover">
+              <button class="btn btn-secondary text-sm">Change photo</button>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div><label class="field-label">Full name</label><input type="text" value="Petros A." class="field-input"></div>
+              <div><label class="field-label">Email</label><input type="email" value="petros@hosperly.com" class="field-input"></div>
+              <div><label class="field-label">Role</label><input type="text" value="Agency Admin" class="field-input" disabled></div>
+              <div><label class="field-label">Agency name</label><input type="text" value="Keystone Realty Group" class="field-input"></div>
+            </div>
+            <div class="flex justify-end mt-5">
+              <button class="btn btn-primary text-sm">Save changes</button>
+            </div>
+          </div>
+
+          <div class="surface-card p-6">
+            <p class="font-display text-lg mb-4">Team members</p>
+            <table class="data-table">
+              <thead><tr><th>Member</th><th>Role</th><th>Status</th><th></th></tr></thead>
+              <tbody>
+                <tr>
+                  <td class="flex items-center gap-3 py-2"><img src="https://i.pravatar.cc/64?img=47" class="w-8 h-8 rounded-full object-cover"><span class="font-medium">Petros A.</span></td>
+                  <td class="text-sm">Admin</td>
+                  <td><span class="badge badge-converted">Active</span></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="flex items-center gap-3 py-2"><img src="https://i.pravatar.cc/64?img=20" class="w-8 h-8 rounded-full object-cover"><span class="font-medium">Tamar Giorgadze</span></td>
+                  <td class="text-sm">Agent</td>
+                  <td><span class="badge badge-converted">Active</span></td>
+                  <td><button class="btn-ghost btn p-1.5">⋯</button></td>
+                </tr>
+                <tr>
+                  <td class="flex items-center gap-3 py-2"><img src="https://i.pravatar.cc/64?img=33" class="w-8 h-8 rounded-full object-cover"><span class="font-medium">Luka Mamaladze</span></td>
+                  <td class="text-sm">Agent</td>
+                  <td><span class="badge badge-muted">Invited</span></td>
+                  <td><button class="btn-ghost btn p-1.5">⋯</button></td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="btn btn-secondary text-sm mt-4">Invite team member</button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+<script src="/assets/js/dashboard.js"></script>
+</body>
+</html>
