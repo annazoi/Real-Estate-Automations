@@ -1,4 +1,4 @@
-export const metadata = { title: "AI Agents · Keystone" };
+export const metadata = { title: "AI Agents · Arqon" };
 
 import AgentsView from "@/features/agents/components/agents-view";
 

@@ -1,4 +1,4 @@
-export const metadata = { title: "Integrations · Keystone" };
+export const metadata = { title: "Integrations · Arqon" };
 
 import IntegrationsView from "@/features/integrations/components/integrations-view";
 

@@ -1,4 +1,4 @@
-export const metadata = { title: "Leads · Keystone" };
+export const metadata = { title: "Leads · Arqon" };
 
 import LeadsView from "@/features/leads/components/leads-view";
 

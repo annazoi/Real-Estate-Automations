@@ -1,4 +1,4 @@
-export const metadata = { title: "CRM · Keystone" };
+export const metadata = { title: "CRM · Arqon" };
 
 import CrmView from "@/features/crm/components/crm-view";
 

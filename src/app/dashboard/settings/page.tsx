@@ -1,4 +1,4 @@
-export const metadata = { title: "Settings · Keystone" };
+export const metadata = { title: "Settings · Arqon" };
 
 import SettingsView from "@/features/settings/components/settings-view";
 

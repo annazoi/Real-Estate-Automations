@@ -1,4 +1,4 @@
-export const metadata = { title: "Dashboard · Keystone" };
+export const metadata = { title: "Dashboard · Arqon" };
 
 import DashboardView from "@/features/dashboard/components/dashboard-view";
 

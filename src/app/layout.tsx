@@ -15,9 +15,9 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Keystone — AI Automation for Real Estate Agencies",
+  title: "Arqon — AI Automation for Real Estate Agencies",
   description:
-    "Keystone gives real estate agencies AI employees that qualify leads, book viewings, and answer calls 24/7.",
+    "Arqon gives real estate agencies AI employees that qualify leads, book viewings, and answer calls 24/7.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

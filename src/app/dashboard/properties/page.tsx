@@ -1,4 +1,4 @@
-export const metadata = { title: "Properties · Keystone" };
+export const metadata = { title: "Properties · Arqon" };
 
 import PropertiesView from "@/features/properties/components/properties-view";
 

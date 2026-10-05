@@ -1,4 +1,4 @@
-export const metadata = { title: "Billing · Keystone" };
+export const metadata = { title: "Billing · Arqon" };
 
 import BillingView from "@/features/billing/components/billing-view";
 

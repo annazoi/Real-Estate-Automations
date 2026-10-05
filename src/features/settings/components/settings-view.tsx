@@ -29,7 +29,7 @@ export default function SettingsView() {
               <div><label className="field-label">Full name</label><input type="text" defaultValue="Petros A." className="field-input" /></div>
               <div><label className="field-label">Email</label><input type="email" defaultValue="petros@hosperly.com" className="field-input" /></div>
               <div><label className="field-label">Role</label><input type="text" defaultValue="Agency Admin" className="field-input" disabled /></div>
-              <div><label className="field-label">Agency name</label><input type="text" defaultValue="Keystone Realty Group" className="field-input" /></div>
+              <div><label className="field-label">Agency name</label><input type="text" defaultValue="Arqon Realty Group" className="field-input" /></div>
             </div>
             <div className="flex justify-end mt-5">
               <button className="btn btn-primary text-sm">Save changes</button>

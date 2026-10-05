@@ -65,7 +65,7 @@ export default function AgentsView() {
           <div className="space-y-4">
             <div>
               <label className="field-label">Agent name</label>
-              <input type="text" defaultValue="Keystone Assistant" className="field-input" />
+              <input type="text" defaultValue="Arqon Assistant" className="field-input" />
             </div>
             <div>
               <label className="field-label">Tone</label>
@@ -92,7 +92,7 @@ export default function AgentsView() {
             <label className="field-label">Opening message</label>
             <div className="rounded-lg p-4" style={{ backgroundColor: "var(--muted)" }}>
               <div className="flex justify-start">
-                <div className="surface-card px-3.5 py-2.5 max-w-[85%] text-sm">Hi there! 👋 I&apos;m the Keystone Assistant. Looking to buy, rent, or just browsing? I can help you find the right place in seconds.</div>
+                <div className="surface-card px-3.5 py-2.5 max-w-[85%] text-sm">Hi there! 👋 I&apos;m the Arqon Assistant. Looking to buy, rent, or just browsing? I can help you find the right place in seconds.</div>
               </div>
             </div>
             <button className="btn btn-secondary text-sm mt-3">Edit script</button>

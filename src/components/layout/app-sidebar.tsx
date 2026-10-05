@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import BrandMark from "@/components/ui/brand-mark";
 
 const NAV_GROUPS = [
   {
@@ -115,13 +116,13 @@ export default function Sidebar({ mobileOpen, onClose }: { mobileOpen: boolean; 
       <div className="flex items-center justify-between mb-6">
         <Link href="/dashboard" className="flex items-center gap-2 px-2">
           <span
-            className="w-8 h-8 rounded-lg flex items-center justify-center font-display text-lg"
+            className="w-8 h-8 rounded-lg flex items-center justify-center"
             style={{ backgroundColor: "var(--primary)", color: "var(--primary-foreground)" }}
           >
-            K
+            <BrandMark />
           </span>
           <span className="font-display text-lg" style={{ color: "var(--navy-foreground)" }}>
-            Keystone
+            Arqon
           </span>
         </Link>
         <button className="lg:hidden p-1" style={{ color: "var(--navy-foreground)" }} onClick={onClose} aria-label="Close menu">

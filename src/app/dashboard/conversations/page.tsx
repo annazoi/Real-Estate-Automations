@@ -1,4 +1,4 @@
-export const metadata = { title: "Conversations · Keystone" };
+export const metadata = { title: "Conversations · Arqon" };
 
 import ConversationsView from "@/features/conversations/components/conversations-view";
 

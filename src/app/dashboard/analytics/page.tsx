@@ -1,4 +1,4 @@
-export const metadata = { title: "Analytics · Keystone" };
+export const metadata = { title: "Analytics · Arqon" };
 
 import AnalyticsView from "@/features/analytics/components/analytics-view";
 

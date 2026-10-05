@@ -112,7 +112,7 @@ export default function CrmView() {
             ["channel", "lead_source"],
           ].map(([a, b]) => (
             <div key={a} className="flex items-center justify-between p-3 rounded-lg" style={{ backgroundColor: "var(--muted)" }}>
-              <span>Keystone: <span className="font-medium">{a}</span></span>
+              <span>Arqon: <span className="font-medium">{a}</span></span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} style={{ color: "var(--muted-foreground)" }}>
                 <path d="M5 12h14M13 6l6 6-6 6" />
               </svg>
